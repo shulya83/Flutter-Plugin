@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:win_text_overlay_demo/main.dart';
+import 'package:win_text_overlay_demo/app.dart';
 
 void main() {
   testWidgets('renders the Windows focus dashboard', (
