@@ -1,17 +1,20 @@
-# win_text_overlay_demo
+# Windows Text Overlay Demo
 
-A new Flutter project.
+Flutter Windows demo for native text input detection and overlay rendering.
 
-## Getting Started
+## What It Shows
 
-This project is a starting point for a Flutter application.
+- Flutter desktop shell with a native C++ Windows layer.
+- Win32 focus/event tracking through `SetWinEventHook`.
+- UI Automation focused-element inspection.
+- Native topmost overlay rendering near the focused text field.
+- Dart/native communication through method and event channels.
+- Live app, control, geometry, text, and latency status in Flutter.
 
-A few resources to get you started if this is your first Flutter project:
+## Build
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```powershell
+$flutter="$env:USERPROFILE\develop\flutter\bin\flutter.bat"
+& $flutter test
+& $flutter build windows
+```
